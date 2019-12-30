@@ -2,6 +2,8 @@
 
 Smart Products was a module of the specialization in industrial engineering. The aim of the module was to transform a shopping cart into a smart shopping cart. For this purpose an image recognition was created with Yolov3 and Darknet. 
 
+Pretrained models and config files are included in smartproducts/NeuralNetwork/..
+
 
 ## Explanation
 This script includes motion detection, image recognition, evaluation of the detected images and upload of the data into a database for visualization on a website. 
