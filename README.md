@@ -10,15 +10,15 @@ This script includes motion detection, image recognition, evaluation of the dete
 
 The script is divided into 5 parts:
 
-Part 0: Setting up all the working directories and folders. 
+**Part 0:** Setting up all the working directories and folders. 
 
-Part 1: The motion detector takes an initial frame and compares all coming frames with the first one. If there is a deviation of a certain percentage, the motion detector stores the frame in a folder.
+**Part 1:** The motion detector takes an initial frame and compares all coming frames with the first one. If there is a deviation of a certain percentage, the motion detector stores the frame in a folder.
 
-Part 2: The image recognition takes all images from motion detection and tries to recognize the products on the frames. image recognition has been trained with Darknet and Yolov3-Tiny. with OpenCV the .weights and .cfg file is loaded into python and each image is processed individually. If the neural network recognizes a product on an image, the corresponding value is written into a .txt file.
+**Part 2:** The image recognition takes all images from motion detection and tries to recognize the products on the frames. image recognition has been trained with Darknet and Yolov3-Tiny. with OpenCV the .weights and .cfg file is loaded into python and each image is processed individually. If the neural network recognizes a product on an image, the corresponding value is written into a .txt file.
 
-Part 3: When all frames have been processed with image recognition, the file 'result.txt' is opened and it is seen which products were recognized on the frames. So that always the best result is written to the database, the file is sorted by the criteria "prediction value". 
+**Part 3:** When all frames have been processed with image recognition, the file 'result.txt' is opened and it is seen which products were recognized on the frames. So that always the best result is written to the database, the file is sorted by the criteria "prediction value". 
 
-Part 4: The highest prediction value from "result.txt" is taken out and stored in the database. You can be sure, that this product is in your smart shopping cart.
+**Part 4:** The highest prediction value from "result.txt" is taken out and stored in the database. You can be sure, that this product is in your smart shopping cart.
 
 ## Installation of prerequisites
 
